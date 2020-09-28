@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 // Replaces body parser
 app.use(express.json());
 
-app.use("/campaigns", campaignsRoutes.getAllUsers(db));
+app.use("/campaigns", campaignsRoutes);
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
