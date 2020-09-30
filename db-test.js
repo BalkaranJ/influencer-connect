@@ -3,7 +3,7 @@ const db = require("./lib/db");
 const userObj = {taskId: 1, userId: 2};
 let resObj = {};
 controller
-  .setUpdateStatus(db, userObj)
+  .deleteInfluencerCampaign(db, userObj)
   .then((data) => {
     console.log("//////////////////////////////", data);
     if (data.rowCount > 0) {
